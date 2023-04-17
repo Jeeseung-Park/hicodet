@@ -46,9 +46,9 @@ def main(args, human_idx=49):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("Generate ground truth detections")
-    parser.add_argument('--data-root', type=str, default='../')
+    parser.add_argument('--data-root', type=str, default='hicodet/')
     parser.add_argument('--partition', type=str, default='test2015')
-    parser.add_argument('--cache-dir', type=str, default='./')
+    parser.add_argument('--cache-dir', type=str, default='hicodet/detections/')
 
     args = parser.parse_args()
     
